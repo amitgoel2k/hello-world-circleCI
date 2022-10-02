@@ -16,9 +16,9 @@ jobs:
       - checkout # check out source code to working directory
       - run:  
           name: "SAVE HELLO WORLD"
-          command: echo "hello world ${MY_NAME}" > /tmp/workspace/output.txt
+          command: echo "hello world ${MY_NAME}" > ~/output.txt
       - persist_to_workspace:
-          root: /tmp/workspace
+          root: ~
           paths:
             - hello/output.txt
   print_output_file:
