@@ -29,9 +29,6 @@ jobs:
       - run:
           name: "Print an env var stored in the Project"
           command: echo ${MY_NAME}
-      - run:
-          name: "Print an env var stored in a Context"
-          command: echo ${CONTEXT_ENV_VAR}
       - run:  
           name: "Say hello"
           command: echo Hello, ${MY_NAME}!
@@ -41,5 +38,5 @@ jobs:
 workflows:
   say-hello-workflow:
     jobs:
-      - say-hello:
-          context: Testing-Env-Vars
+      - say-hello
+
