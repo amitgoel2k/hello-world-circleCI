@@ -18,7 +18,7 @@ jobs:
           name: "SAVE HELLO WORLD"
           command: echo "hello world ${MY_NAME}" > ~/output.txt
       - persist_to_workspace:
-          root: ~
+          root: ~/
           paths:
             - hello/output.txt
   print_output_file:
