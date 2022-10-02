@@ -20,7 +20,7 @@ jobs:
       - persist_to_workspace:
           root: ~/
           paths:
-            - hello/output.txt
+            - output.txt
   print_output_file:
     docker:
       - image: cimg/base:stable
