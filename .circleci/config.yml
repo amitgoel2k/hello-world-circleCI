@@ -28,13 +28,13 @@ jobs:
           command: echo ${MY_ENV_VAR}
       - run:
           name: "Print an env var stored in the Project"
-          command: echo ${PROJECT_ENV_VAR}
+          command: echo ${MY_NAME}
       - run:
           name: "Print an env var stored in a Context"
           command: echo ${CONTEXT_ENV_VAR}
       - run:  
           name: "Say hello"
-          command: echo Hello, ${PROJECT_ENV_VAR}!
+          command: echo Hello, ${MY_NAME}!
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
